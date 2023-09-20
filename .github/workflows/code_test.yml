@@ -22,6 +22,7 @@ jobs:
 
   Deploy:
     runs-on: ubuntu-latest
+    needs: UnitTest 
       
     steps:
         - name: 'Download the code from Git'
